@@ -8,24 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Ivan\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\PC-USER\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ivan\\Desktop\\INT B\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.IOC\\SistemaVenta.IOC.csproj",
+      "projectUniqueName": "C:\\Users\\PC-USER\\Desktop\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.IOC\\SistemaVenta.IOC.csproj",
       "projectName": "SistemaVenta.IOC",
-      "projectPath": "C:\\Users\\Ivan\\Desktop\\INT B\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.IOC\\SistemaVenta.IOC.csproj",
-      "packagesPath": "C:\\Users\\Ivan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ivan\\Desktop\\INT B\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.IOC\\obj\\",
+      "projectPath": "C:\\Users\\PC-USER\\Desktop\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.IOC\\SistemaVenta.IOC.csproj",
+      "packagesPath": "C:\\Users\\PC-USER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC-USER\\Desktop\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.IOC\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Ivan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\PC-USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,6 +56,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

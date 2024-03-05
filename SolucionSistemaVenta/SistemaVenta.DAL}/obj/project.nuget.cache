@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "//8r2dh2ZXRKKvsoELQoyxXhtSQjVwsvSdNHgessCvLLIyZEYdPTn/AnNUMatLY0lbDCG3c2ZzCWd/+6i1UHdA==",
+  "dgSpecHash": "uiQ2wi4ShL0YRFSzuqgM/901rzHKMoAKt8Sf8hk3PGWRAaN/bLDPfrpRtk4VHtpCqxe4PiPFEs0I5Q0VPJ3wfA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ivan\\Desktop\\INT B\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.DAL}\\SistemaVenta.DAL}.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\PC-USER\\Desktop\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.DAL}\\SistemaVenta.DAL}.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PC-USER\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\PC-USER\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\PC-USER\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512"
+  ],
   "logs": []
 }
