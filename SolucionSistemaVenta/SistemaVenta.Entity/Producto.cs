@@ -17,6 +17,6 @@ namespace SistemaVenta.Entity
         public bool? EsActivo { get; set; }
         public DateTime? FechaRegistro { get; set; }
 
-        public virtual Categorium? IdCategoriaNavigation { get; set; }
+        public virtual Categoria? IdCategoriaNavigation { get; set; }
     }
 }

@@ -3,18 +3,18 @@ using System.Collections.Generic;
 
 namespace SistemaVenta.Entity
 {
-    public partial class Categorium
+    public partial class TipoDocumentoVenta
     {
-        public Categorium()
+        public TipoDocumentoVenta()
         {
-            Productos = new HashSet<Producto>();
+            Venta = new HashSet<Venta>();
         }
 
-        public int IdCategoria { get; set; }
+        public int IdTipoDocumentoVenta { get; set; }
         public string? Descripcion { get; set; }
         public bool? EsActivo { get; set; }
         public DateTime? FechaRegistro { get; set; }
 
-        public virtual ICollection<Producto> Productos { get; set; }
+        public virtual ICollection<Venta> Venta { get; set; }
     }
 }

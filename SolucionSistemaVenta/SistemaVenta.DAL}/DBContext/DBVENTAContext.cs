@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using SistemaVenta.Entity;
 
-namespace SistemaVenta.Entity
+namespace SistemaVenta.DAL.DBContext
 {
     public partial class DBVENTAContext : DbContext
     {
@@ -16,31 +17,24 @@ namespace SistemaVenta.Entity
         {
         }
 
-        public virtual DbSet<Categorium> Categoria { get; set; } = null!;
+        public virtual DbSet<Categoria> Categoria { get; set; } = null!;
         public virtual DbSet<Configuracion> Configuracions { get; set; } = null!;
-        public virtual DbSet<DetalleVentum> DetalleVenta { get; set; } = null!;
+        public virtual DbSet<DetalleVenta> DetalleVenta { get; set; } = null!;
         public virtual DbSet<Menu> Menus { get; set; } = null!;
         public virtual DbSet<Negocio> Negocios { get; set; } = null!;
         public virtual DbSet<NumeroCorrelativo> NumeroCorrelativos { get; set; } = null!;
         public virtual DbSet<Producto> Productos { get; set; } = null!;
         public virtual DbSet<Rol> Rols { get; set; } = null!;
         public virtual DbSet<RolMenu> RolMenus { get; set; } = null!;
-        public virtual DbSet<TipoDocumentoVentum> TipoDocumentoVenta { get; set; } = null!;
+        public virtual DbSet<TipoDocumentoVenta> TipoDocumentoVenta { get; set; } = null!;
         public virtual DbSet<Usuario> Usuarios { get; set; } = null!;
-        public virtual DbSet<Ventum> Venta { get; set; } = null!;
+        public virtual DbSet<Venta> Venta { get; set; } = null!;
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-FU3CFO0;Initial Catalog=DBVENTA;Integrated Security=True;Trust Server Certificate=True");
-            }
-        }
+     
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Categorium>(entity =>
+            modelBuilder.Entity<Categoria>(entity =>
             {
                 entity.HasKey(e => e.IdCategoria)
                     .HasName("PK__Categori__8A3D240CEB7741D7");
@@ -82,7 +76,7 @@ namespace SistemaVenta.Entity
                     .HasColumnName("valor");
             });
 
-            modelBuilder.Entity<DetalleVentum>(entity =>
+            modelBuilder.Entity<DetalleVenta>(entity =>
             {
                 entity.HasKey(e => e.IdDetalleVenta)
                     .HasName("PK__DetalleV__BFE2843FC996A43C");
@@ -355,7 +349,7 @@ namespace SistemaVenta.Entity
                     .HasConstraintName("FK__RolMenu__idRol__3E52440B");
             });
 
-            modelBuilder.Entity<TipoDocumentoVentum>(entity =>
+            modelBuilder.Entity<TipoDocumentoVenta>(entity =>
             {
                 entity.HasKey(e => e.IdTipoDocumentoVenta)
                     .HasName("PK__TipoDocu__A9D59AEE0DD42052");
@@ -429,7 +423,7 @@ namespace SistemaVenta.Entity
                     .HasConstraintName("FK__Usuario__idRol__4316F928");
             });
 
-            modelBuilder.Entity<Ventum>(entity =>
+            modelBuilder.Entity<Venta>(entity =>
             {
                 entity.HasKey(e => e.IdVenta)
                     .HasName("PK__Venta__077D56141BB0CA01");

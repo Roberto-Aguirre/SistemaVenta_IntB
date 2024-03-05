@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace SistemaVenta.Entity
 {
-    public partial class DetalleVentum
+    public partial class DetalleVenta
     {
         public int IdDetalleVenta { get; set; }
         public int? IdVenta { get; set; }
@@ -15,6 +15,6 @@ namespace SistemaVenta.Entity
         public decimal? Precio { get; set; }
         public decimal? Total { get; set; }
 
-        public virtual Ventum? IdVentaNavigation { get; set; }
+        public virtual Venta? IdVentaNavigation { get; set; }
     }
 }

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace SistemaVenta.Entity
 {
-    public partial class Ventum
+    public partial class Venta
     {
-        public Ventum()
+        public Venta()
         {
-            DetalleVenta = new HashSet<DetalleVentum>();
+            DetalleVenta = new HashSet<DetalleVenta>();
         }
 
         public int IdVenta { get; set; }
@@ -21,8 +21,8 @@ namespace SistemaVenta.Entity
         public decimal? Total { get; set; }
         public DateTime? FechaRegistro { get; set; }
 
-        public virtual TipoDocumentoVentum? IdTipoDocumentoVentaNavigation { get; set; }
+        public virtual TipoDocumentoVenta? IdTipoDocumentoVentaNavigation { get; set; }
         public virtual Usuario? IdUsuarioNavigation { get; set; }
-        public virtual ICollection<DetalleVentum> DetalleVenta { get; set; }
+        public virtual ICollection<DetalleVenta> DetalleVenta { get; set; }
     }
 }
