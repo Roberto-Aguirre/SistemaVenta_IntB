@@ -28,3 +28,9 @@ C:\Users\PC-USER\Desktop\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.BLL
 C:\Users\PC-USER\Desktop\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.BLL\bin\Debug\net6.0\SistemaVenta.Entity.pdb
 C:\Users\PC-USER\Desktop\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.BLL\obj\Debug\net6.0\SistemaVenta.BLL.csproj.AssemblyReference.cache
 C:\Users\PC-USER\Desktop\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.BLL\obj\Debug\net6.0\SistemaVenta.BLL.csproj.CopyComplete
+C:\Users\Ivan\Desktop\INT B\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.BLL\bin\Debug\net6.0\SistemaVenta.DAL.dll
+C:\Users\Ivan\Desktop\INT B\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.BLL\bin\Debug\net6.0\SistemaVenta.Entity.dll
+C:\Users\Ivan\Desktop\INT B\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.BLL\bin\Debug\net6.0\SistemaVenta.DAL.pdb
+C:\Users\Ivan\Desktop\INT B\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.BLL\bin\Debug\net6.0\SistemaVenta.Entity.pdb
+C:\Users\Ivan\Desktop\INT B\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.BLL\obj\Debug\net6.0\SistemaVenta.BLL.csproj.AssemblyReference.cache
+C:\Users\Ivan\Desktop\INT B\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.BLL\obj\Debug\net6.0\SistemaVenta.BLL.csproj.CopyComplete
