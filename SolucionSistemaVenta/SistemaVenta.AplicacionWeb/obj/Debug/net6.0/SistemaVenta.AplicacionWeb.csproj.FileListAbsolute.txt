@@ -518,3 +518,5 @@ C:\Users\Ivan\Desktop\INT B\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.
 C:\Users\Ivan\Desktop\INT B\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\SistemaVenta.DAL.pdb
 C:\Users\Ivan\Desktop\INT B\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\net6.0\SistemaVenta.AplicacionWeb.csproj.AssemblyReference.cache
 C:\Users\Ivan\Desktop\INT B\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\net6.0\SistemaVenta.AplicacionWeb.csproj.CopyComplete
+C:\Users\PC-USER\Desktop\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\PC-USER\Desktop\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
