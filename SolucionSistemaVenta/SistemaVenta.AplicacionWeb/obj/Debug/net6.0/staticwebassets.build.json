@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ueplIYWCBwHohZwug/0ZaL7Zz+HLIFjn3kKbCXVQpj4=",
+  "Hash": "WNDorflcLSliuItZyOBf0Um7Fgs4CVJ7TVoRUcNFnjI=",
   "Source": "SistemaVenta.AplicacionWeb",
   "BasePath": "_content/SistemaVenta.AplicacionWeb",
   "Mode": "Default",
@@ -319,6 +319,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\vistas\\datatables-demo.js"
+    },
+    {
+      "Identity": "C:\\Users\\PC-USER\\Desktop\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\wwwroot\\js\\vistas\\Negocio_Index.js",
+      "SourceId": "SistemaVenta.AplicacionWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC-USER\\Desktop\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\wwwroot\\",
+      "BasePath": "_content/SistemaVenta.AplicacionWeb",
+      "RelativePath": "js/vistas/Negocio_Index.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\vistas\\Negocio_Index.js"
     },
     {
       "Identity": "C:\\Users\\PC-USER\\Desktop\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\wwwroot\\js\\vistas\\Usuario_Index.js",
