@@ -28,3 +28,18 @@ C:\Users\PC-USER\Desktop\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.Ent
 C:\Users\PC-USER\Desktop\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.pdb
 C:\Users\PC-USER\Desktop\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.genruntimeconfig.cache
 C:\Users\PC-USER\Desktop\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\ref\SistemaVenta.Entity.dll
+C:\Users\Ivan Aguirre\Desktop\Codes\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.Entity\bin\Debug\net6.0\SistemaVenta.Entity.deps.json
+C:\Users\Ivan Aguirre\Desktop\Codes\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.Entity\bin\Debug\net6.0\SistemaVenta.Entity.runtimeconfig.json
+C:\Users\Ivan Aguirre\Desktop\Codes\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.Entity\bin\Debug\net6.0\SistemaVenta.Entity.dll
+C:\Users\Ivan Aguirre\Desktop\Codes\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.Entity\bin\Debug\net6.0\SistemaVenta.Entity.pdb
+C:\Users\Ivan Aguirre\Desktop\Codes\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.csproj.AssemblyReference.cache
+C:\Users\Ivan Aguirre\Desktop\Codes\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ivan Aguirre\Desktop\Codes\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.AssemblyInfoInputs.cache
+C:\Users\Ivan Aguirre\Desktop\Codes\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.AssemblyInfo.cs
+C:\Users\Ivan Aguirre\Desktop\Codes\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Ivan Aguirre\Desktop\Codes\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.sourcelink.json
+C:\Users\Ivan Aguirre\Desktop\Codes\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.dll
+C:\Users\Ivan Aguirre\Desktop\Codes\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\refint\SistemaVenta.Entity.dll
+C:\Users\Ivan Aguirre\Desktop\Codes\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.pdb
+C:\Users\Ivan Aguirre\Desktop\Codes\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.genruntimeconfig.cache
+C:\Users\Ivan Aguirre\Desktop\Codes\SistemaVenta_IntB\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\ref\SistemaVenta.Entity.dll

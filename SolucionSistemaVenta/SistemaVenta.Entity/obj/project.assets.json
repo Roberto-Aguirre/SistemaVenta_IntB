@@ -2012,19 +2012,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC-USER\\.nuget\\packages\\": {}
+    "C:\\Users\\Ivan Aguirre\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC-USER\\Desktop\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.Entity\\SistemaVenta.Entity.csproj",
+      "projectUniqueName": "C:\\Users\\Ivan Aguirre\\Desktop\\Codes\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.Entity\\SistemaVenta.Entity.csproj",
       "projectName": "SistemaVenta.Entity",
-      "projectPath": "C:\\Users\\PC-USER\\Desktop\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.Entity\\SistemaVenta.Entity.csproj",
-      "packagesPath": "C:\\Users\\PC-USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC-USER\\Desktop\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.Entity\\obj\\",
+      "projectPath": "C:\\Users\\Ivan Aguirre\\Desktop\\Codes\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.Entity\\SistemaVenta.Entity.csproj",
+      "packagesPath": "C:\\Users\\Ivan Aguirre\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ivan Aguirre\\Desktop\\Codes\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.Entity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\PC-USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ivan Aguirre\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2044,6 +2044,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2077,7 +2082,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

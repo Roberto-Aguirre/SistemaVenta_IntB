@@ -19,37 +19,6 @@ namespace SistemaVenta.BLL.Imprementacion
         {
             _repositorio = repositorio;
         }
-        public async Task<bool> EliminarStorage(string CarpetaDestino, string NombreArchivo)
-        {
-            try
-            {
-                IQueryable<Configuracion> query = await _repositorio.Consultar(c => c.Recurso.Equals("FireBase_Storage"));
-                Dictionary<string, string> Config = query.ToDictionary(keySelector: c => c.Propiedad, elementSelector: c => c.Valor);
-
-                var auth = new FirebaseAuthProvider(new FirebaseConfig(Config["api_key"]));
-                var a = await auth.SignInWithEmailAndPasswordAsync(Config["email"], Config["clave"]);
-                var cancellation = new CancellationTokenSource();
-
-                var task = new FirebaseStorage(
-                    Config["ruta"],
-                    new FirebaseStorageOptions
-                    {
-                        AuthTokenAsyncFactory = () => Task.FromResult(a.FirebaseToken),
-                        ThrowOnCancel = true
-                    })
-                    .Child(Config[CarpetaDestino])
-                    .Child(Config[NombreArchivo])
-                    .DeleteAsync();
-
-                await task;
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-
         public async Task<string> SubirStorage(Stream StreamArchivo, string CarpetaDestino, string NombreArchivo)
         {
             string UrlImagen = "";
@@ -57,9 +26,10 @@ namespace SistemaVenta.BLL.Imprementacion
             {
                 IQueryable<Configuracion> query = await _repositorio.Consultar(c => c.Recurso.Equals("FireBase_Storage"));
                 Dictionary<string, string> Config = query.ToDictionary(keySelector: c => c.Propiedad, elementSelector: c => c.Valor);
-
+                Console.WriteLine(Config);
                 var auth = new FirebaseAuthProvider(new FirebaseConfig(Config["api_key"]));
-                var a = await auth.SignInWithEmailAndPasswordAsync(Config["email"], Config["clave"]);
+                var a = await auth.SignInWithEmailAndPasswordAsync(Config["email"],Config["clave"]);
+
                 var cancellation = new CancellationTokenSource();
 
                 var task = new FirebaseStorage(
@@ -70,16 +40,51 @@ namespace SistemaVenta.BLL.Imprementacion
                         ThrowOnCancel = true
                     })
                     .Child(Config[CarpetaDestino])
-                    .Child(Config[NombreArchivo])
+                    .Child(NombreArchivo)
                     .PutAsync(StreamArchivo, cancellation.Token);
-
-                UrlImagen = await task; 
+                UrlImagen = await task;
             }
             catch
             {
-                return UrlImagen = "";
+                UrlImagen = "";
             }
+
             return UrlImagen;
+
         }
+
+        public async Task<bool> EliminarStorage(string CarpetaDestino, string NombreArchivo)
+        {
+            try
+            {
+                IQueryable<Configuracion> query = await _repositorio.Consultar(c => c.Recurso.Equals("FireBase_Storage"));
+                Dictionary<string, string> Config = query.ToDictionary(keySelector: c => c.Propiedad, elementSelector: c => c.Valor);
+                
+                var auth = new FirebaseAuthProvider(new FirebaseConfig(Config["api_key"]));
+                var a = await auth.SignInWithEmailAndPasswordAsync(Config["email"], Config["clave"]);
+
+                var cancellation = new CancellationTokenSource();
+
+                var task = new FirebaseStorage(
+                    Config["ruta"],
+                    new FirebaseStorageOptions
+                    {
+                        AuthTokenAsyncFactory = () => Task.FromResult(a.FirebaseToken),
+                        ThrowOnCancel = true
+                    })
+                    .Child(Config[CarpetaDestino])
+                    .Child(NombreArchivo)
+                    .DeleteAsync();
+                await task;
+                Console.WriteLine(task);
+                return true;
+            }
+            catch
+            {
+                return false;
+
+            }
+        }
+
     }
 }

@@ -26,35 +26,56 @@ namespace SistemaVenta.BLL.Imprementacion
             {
                 IQueryable<Configuracion> query = await _repositorio.Consultar(c => c.Recurso.Equals("Servicio_Correo"));
                 Dictionary<string, string> Config = query.ToDictionary(keySelector: c => c.Propiedad, elementSelector: c => c.Valor);
+                Console.WriteLine(Config);
+
                 var credenciales = new NetworkCredential(Config["correo"], Config["clave"]);
 
-                var correo = new MailMessage()
+                //var correo = new MailMessage()
+                //{
+                //    From = new MailAddress(Config["correo"], Config["alias"]),
+                //    Subject = Asunto,
+                //    Body = Mensaje,
+                //    IsBodyHtml = true
+                //};
+
+                //correo.To.Add(new MailAddress(CorreoDestino));
+
+                using (MailMessage mail = new MailMessage())
                 {
-                    From = new MailAddress(Config["correo"], Config["alias"]),
-                    Subject = Asunto,
-                    Body = Mensaje,
-                    IsBodyHtml = true
+                    mail.From = new MailAddress(Config["correo"]);
+                    mail.To.Add(CorreoDestino);
+                    mail.Subject = Asunto;
+                    mail.Body = Mensaje;
+                    mail.IsBodyHtml = true;
+                    //mail.Attachments.Add(new Attachment("C:\\file.zip"));
 
-                };
+                    using (SmtpClient smtp = new SmtpClient(Config["host"], 587))
+                    {
+                        smtp.Credentials = new NetworkCredential(Config["correo"], Config["clave"]);
+                        smtp.EnableSsl = true;
+                        smtp.Send(mail);
+                    }
+                }
 
-                correo.To.Add(new MailAddress(CorreoDestino));
+                //var clienteServidor = new SmtpClient()
+                //{
+                //    Host = Config["host"],
+                //    Port = int.Parse(Config["puerto"]),
+                //    DeliveryMethod = SmtpDeliveryMethod.Network,
+                //    UseDefaultCredentials = true,
+                //    EnableSsl = true
+                //    //Credentials = credenciales
 
-                var ClienteServidor = new SmtpClient()
-                {
-                    Host = Config["host"],
-                    Port = int.Parse(Config["puerto"]),
-                    Credentials = credenciales,
-                    DeliveryMethod = SmtpDeliveryMethod.Network,
-                    UseDefaultCredentials = false,
-                    EnableSsl = true
+                //};
 
-                };
-
-                ClienteServidor.Send(correo);
+               
                 return true;
 
             }
-            catch {
+            catch(Exception ex) {
+                Console.WriteLine();
+                Console.WriteLine(ex.ToString());
+                Console.WriteLine();
                 return false;
             }
         }
