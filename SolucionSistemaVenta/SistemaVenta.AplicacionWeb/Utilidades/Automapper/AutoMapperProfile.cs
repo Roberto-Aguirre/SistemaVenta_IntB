@@ -62,6 +62,18 @@ namespace SistemaVenta.AplicacionWeb.Utildiades.Automapper
 
             #endregion
 
+            #region Categoria
+            CreateMap<Categoria, VMCategoria>()
+            .ForMember(destino => destino.EsActivo, opt => opt.MapFrom(origen => origen.EsActivo == true ? 1 : 0)
+            );
+
+            CreateMap<VMCategoria, Categoria>()
+                .ForMember(destino => destino.EsActivo, opt => opt.MapFrom(origen => origen.EsActivo == 1 ? true : false)
+                );
+
+
+            #endregion
+
             #region Venta
             CreateMap<Venta, VMVenta>()
                 .ForMember(destino => destino.TipoDocumentoVenta, opt => opt.MapFrom(origen => origen.IdTipoDocumentoVentaNavigation.Descripcion))

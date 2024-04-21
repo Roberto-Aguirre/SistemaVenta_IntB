@@ -34,6 +34,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
             return StatusCode(StatusCodes.Status200OK, new { data = vmCategoriaLista });
 
         }
+
         [HttpPost]
         public async Task<IActionResult> Crear([FromForm] VMCategoria modelo)
         {
