@@ -15,18 +15,27 @@ insert into Usuario(nombre,correo,telefono,idRol,urlFoto,nombreFoto,clave,esActi
 --________________________________ RECURSOS DE FIREBASE_STORAGE Y CORREO ________________________________
 --(AQUI DEBES INCLUIR TUS PROPIAS CLAVES Y CRENDENCIALES)
 
+USE DBVENTA;
+GO
+
+create table Configuracion(
+recurso varchar(50),
+propiedad varchar(50),
+valor varchar(60)
+)
+
 insert into Configuracion(recurso,propiedad,valor) values
-('FireBase_Storage','email',''),
-('FireBase_Storage','clave',''),
-('FireBase_Storage','ruta',''),
-('FireBase_Storage','api_key',''),
+('FireBase_Storage','email','aguirresilerioivan@gmail.com'),
+('FireBase_Storage','clave','Ilike2pizza@'),
+('FireBase_Storage','ruta','mitiendaonline-2024.appspot.com'),
+('FireBase_Storage','api_key','AIzaSyAxauNUH6T4dI958N28RZC3Vxn2cevxPcA'),
 ('FireBase_Storage','carpeta_usuario','IMAGENES_USUARIO'),
 ('FireBase_Storage','carpeta_producto','IMAGENES_PRODUCTO'),
 ('FireBase_Storage','carpeta_logo','IMAGENES_LOGO')
 
 insert into Configuracion(recurso,propiedad,valor) values
-('Servicio_Correo','correo',''),
-('Servicio_Correo','clave',''),
+('Servicio_Correo','correo','aguirresilerioivan@gmail.com'),
+('Servicio_Correo','clave','rrdionqbvqubslbz'),
 ('Servicio_Correo','alias','MiTienda.com'),
 ('Servicio_Correo','host','smtp.gmail.com'),
 ('Servicio_Correo','puerto','587')

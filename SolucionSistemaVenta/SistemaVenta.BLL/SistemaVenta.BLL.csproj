@@ -1,21 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RootNamespace>SistemaVenta.BLL</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="FirebaseAuthentication.net" Version="3.7.2" />
     <PackageReference Include="FirebaseStorage.net" Version="1.0.3" />
-    <PackageReference Include="Microsoft.NETCore.Platforms" Version="7.0.4" />
-    <PackageReference Include="Microsoft.NETCore.Targets" Version="3.1.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SistemaVenta.DAL}\SistemaVenta.DAL.csproj" />
+    <ProjectReference Include="..\SistemaVenta.DAL\SistemaVenta.DAL.csproj" />
     <ProjectReference Include="..\SistemaVenta.Entity\SistemaVenta.Entity.csproj" />
   </ItemGroup>
 

@@ -63,9 +63,17 @@
               "target": "Package",
               "version": "[11.0.0, )"
             },
+            "DinkToPdf": {
+              "target": "Package",
+              "version": "[1.0.8, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.16, )"
+              "version": "[6.0.9, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.0, )"
             }
           },
           "imports": [
@@ -115,8 +123,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Ivan Aguirre\\Desktop\\Codes\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.DAL}\\SistemaVenta.DAL.csproj": {
-                "projectPath": "C:\\Users\\Ivan Aguirre\\Desktop\\Codes\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.DAL}\\SistemaVenta.DAL.csproj"
+              "C:\\Users\\Ivan Aguirre\\Desktop\\Codes\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj": {
+                "projectPath": "C:\\Users\\Ivan Aguirre\\Desktop\\Codes\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj"
               },
               "C:\\Users\\Ivan Aguirre\\Desktop\\Codes\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.Entity\\SistemaVenta.Entity.csproj": {
                 "projectPath": "C:\\Users\\Ivan Aguirre\\Desktop\\Codes\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.Entity\\SistemaVenta.Entity.csproj"
@@ -146,14 +154,6 @@
             "FirebaseStorage.net": {
               "target": "Package",
               "version": "[1.0.3, )"
-            },
-            "Microsoft.NETCore.Platforms": {
-              "target": "Package",
-              "version": "[7.0.4, )"
-            },
-            "Microsoft.NETCore.Targets": {
-              "target": "Package",
-              "version": "[3.1.0, )"
             }
           },
           "imports": [
@@ -176,14 +176,14 @@
         }
       }
     },
-    "C:\\Users\\Ivan Aguirre\\Desktop\\Codes\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.DAL}\\SistemaVenta.DAL.csproj": {
+    "C:\\Users\\Ivan Aguirre\\Desktop\\Codes\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ivan Aguirre\\Desktop\\Codes\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.DAL}\\SistemaVenta.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Ivan Aguirre\\Desktop\\Codes\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj",
         "projectName": "SistemaVenta.DAL",
-        "projectPath": "C:\\Users\\Ivan Aguirre\\Desktop\\Codes\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.DAL}\\SistemaVenta.DAL.csproj",
+        "projectPath": "C:\\Users\\Ivan Aguirre\\Desktop\\Codes\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj",
         "packagesPath": "C:\\Users\\Ivan Aguirre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ivan Aguirre\\Desktop\\Codes\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.DAL}\\obj\\",
+        "outputPath": "C:\\Users\\Ivan Aguirre\\Desktop\\Codes\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ivan Aguirre\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -283,13 +283,13 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.27, )"
+              "version": "[6.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.27, )"
+              "version": "[6.0.8, )"
             }
           },
           "imports": [
@@ -339,8 +339,8 @@
               "C:\\Users\\Ivan Aguirre\\Desktop\\Codes\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.BLL\\SistemaVenta.BLL.csproj": {
                 "projectPath": "C:\\Users\\Ivan Aguirre\\Desktop\\Codes\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.BLL\\SistemaVenta.BLL.csproj"
               },
-              "C:\\Users\\Ivan Aguirre\\Desktop\\Codes\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.DAL}\\SistemaVenta.DAL.csproj": {
-                "projectPath": "C:\\Users\\Ivan Aguirre\\Desktop\\Codes\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.DAL}\\SistemaVenta.DAL.csproj"
+              "C:\\Users\\Ivan Aguirre\\Desktop\\Codes\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj": {
+                "projectPath": "C:\\Users\\Ivan Aguirre\\Desktop\\Codes\\SistemaVenta_IntB\\SolucionSistemaVenta\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj"
               }
             }
           }

@@ -39,12 +39,13 @@ namespace SistemaVenta.AplicacionWeb.Controllers
         public async Task<IActionResult> Crear([FromForm] VMCategoria modelo)
         {
             GenericResponse<VMCategoria> gResponse = new GenericResponse<VMCategoria>();
+
             try
             {
                 Categoria categoria_creada = await _categoriaServicio.Crear(_mapper.Map<Categoria>(modelo));
                 modelo = _mapper.Map<VMCategoria>(categoria_creada);
 
-
+                Console.WriteLine(categoria_creada.ToString());
                 gResponse.Estado = true;
                 gResponse.Objeto = modelo;
             }
@@ -62,6 +63,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
         public async Task<IActionResult> Editar([FromForm] VMCategoria modelo)
         {
             GenericResponse<VMCategoria> gResponse = new GenericResponse<VMCategoria>();
+          
             try
             {
                 Categoria categoria_editada = await _categoriaServicio.Editar(_mapper.Map<Categoria>(modelo));
@@ -83,15 +85,17 @@ namespace SistemaVenta.AplicacionWeb.Controllers
         public async Task<IActionResult> Eliminar(int idCategoria)
         {
             GenericResponse<string> gResponse = new GenericResponse<string>();
-
+            Console.WriteLine(idCategoria);
             try
             {
                 gResponse.Estado = await _categoriaServicio.Eliminar(idCategoria);
             }
             catch(Exception ex)
             {
+
                 gResponse.Estado = false;
                 gResponse.Mensaje = ex.Message;
+                Console.WriteLine(gResponse.Mensaje);
 
 
             }

@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+   <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -17,8 +17,7 @@
     <link href="~/css/sb-admin-2.css" rel="stylesheet">
     <link href="~/vendor/toastr/toastr.min.css" rel="stylesheet">
     <link href="~/vendor/sweetalert/sweetalert.css" rel="stylesheet">
-    @await RenderSectionAsync("Estilos", required: false)
-
+     @await RenderSectionAsync("Estilos", required: false)
 </head>
 <body id="page-top">
 
@@ -39,16 +38,16 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
+            @await Component.InvokeAsync("Menu")
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="@Url.Action("Index","Dashboard")">
+         @*   <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("Index","DashBoard")">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span>
-                </a>
+                    <span>Dashboard</span></a>
             </li>
-
+*@
             <!-- Nav Item - Administración Collapse Menu -->
-            <li class="nav-item">
+       @*     <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAdministracion">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Administración</span>
@@ -59,24 +58,24 @@
                         <a class="collapse-item" href="@Url.Action("Index","Negocio")">Negocio</a>
                     </div>
                 </div>
-            </li>
+            </li>*@
 
             <!-- Nav Item - Inventario Collapse Menu -->
-            <li class="nav-item">
+          @*  <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInventario">
                     <i class="fas fa-fw fa-clipboard-list"></i>
                     <span>Inventario</span>
                 </a>
                 <div id="collapseInventario" class="collapse" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="@Url.Action("Index","Categorias")">Categorias</a>
+                        <a class="collapse-item" href="@Url.Action("Index","Categoria")">Categorias</a>
                         <a class="collapse-item" href="@Url.Action("Index","Producto")">Productos</a>
                     </div>
                 </div>
             </li>
-
+*@
             <!-- Nav Item - Venta Collapse Menu -->
-            <li class="nav-item">
+         @*   <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseVenta">
                     <i class="fas fa-fw fa-tags"></i>
                     <span>Ventas</span>
@@ -87,20 +86,20 @@
                         <a class="collapse-item" href="@Url.Action("HistorialVenta","Venta")">Historial Venta</a>
                     </div>
                 </div>
-            </li>
+            </li>*@
 
-            <!-- Nav Item - Reportes Collapse Menu -->
-            <li class="nav-item">
+             <!-- Nav Item - Reportes Collapse Menu -->
+             @*<li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseReportes">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Reportes</span>
                 </a>
                 <div id="collapseReportes" class="collapse" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="@Url.Action("Index","Reportes")">Reporte de Ventas</a>
+                        <a class="collapse-item" href="@Url.Action("Index","Reporte")">Reporte de Ventas</a>
                     </div>
                 </div>
-            </li>
+            </li>*@
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -110,6 +109,7 @@
             </div>
         </ul>
         <!-- End of Sidebar -->
+
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
@@ -130,16 +130,16 @@
                         <div class="topbar-divider d-none d-sm-block"></div>
 
                         <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
+                       @* <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
                                 <img class="img-profile rounded-circle"
-                                     src="https://images.unsplash.com/photo-1519648023493-d82b5f8d7b8a?w=300">
+                                    src="https://images.unsplash.com/photo-1519648023493-d82b5f8d7b8a?w=300">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                 aria-labelledby="userDropdown">
+                                aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="@Url.Action("Perfil","Home")">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Perfil
@@ -150,12 +150,14 @@
                                     Salir
                                 </a>
                             </div>
-                        </li>
+                        </li>*@
+                        @await Component.InvokeAsync("MenuUsuario")
 
                     </ul>
 
                 </nav>
                 <!-- End of Topbar -->
+
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     @RenderBody()
@@ -164,6 +166,7 @@
 
             </div>
             <!-- End of Main Content -->
+
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
@@ -179,7 +182,7 @@
 
     </div>
     <!-- End of Page Wrapper -->
-    
+
     <!-- Bootstrap core JavaScript-->
     <script src="~/vendor/jquery/jquery.min.js"></script>
     <script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -192,6 +195,7 @@
     <script src="~/vendor/toastr/toastr.min.js"></script>
     <script src="~/vendor/sweetalert/sweetalert.js"></script>
     <script src="~/vendor/loadingoverlay/loadingoverlay.min.js"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
