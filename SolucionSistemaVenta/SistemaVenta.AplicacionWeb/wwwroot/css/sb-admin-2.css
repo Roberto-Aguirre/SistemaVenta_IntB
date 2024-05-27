@@ -10,35 +10,36 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- :root {
-  --blue: #4e73df;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #e74a3b;
-  --orange: #fd7e14;
-  --yellow: #f6c23e;
-  --green: #1cc88a;
-  --teal: #20c9a6;
-  --cyan: #36b9cc;
-  --white: #fff;
-  --gray: #858796;
-  --gray-dark: #5a5c69;
-  --primary: #4e73df;
-  --secondary: #858796;
-  --success: #1cc88a;
-  --info: #36b9cc;
-  --warning: #f6c23e;
-  --danger: #e74a3b;
-  --light: #f8f9fc;
-  --dark: #5a5c69;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+:root {
+    --blue: #4e73df;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #e74a3b;
+    --orange: #fd7e14;
+    --yellow: #f6c23e;
+    --green: #1cc88a;
+    --teal: #20c9a6;
+    --cyan: #36b9cc;
+    --white: #fff;
+    --gray: #858796;
+    --gray-dark: #5a5c69;
+    --primary: #4e73df;
+    --secondary: #858796;
+    --success: #1cc88a;
+    --info: #36b9cc;
+    --warning: #f6c23e;
+    --danger: #e74a3b;
+    --light: #f8f9fc;
+    --dark: #5a5c69;
+    --seagreen: #2E8B57;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 *,
@@ -9946,12 +9947,12 @@ a:focus {
 } */
 
 .bg-gradient-primary {
-  background-color: #004A93;
-  background-size: cover;
+    background-color: #2E8B57;
+    background-size: cover;
 }
 
-.bg-second-primary{
-  background-color: #004A93 !important;
+.bg-second-primary {
+    background-color: #2E8B57 !important;
 }
 
 
@@ -10916,22 +10917,22 @@ a:focus {
 }
 
 .bg-login-image {
-  background: url("https://images.unsplash.com/photo-1541574823565-f1d660886187?w=600");
-  /* background: url("https://source.unsplash.com/K4mSJ7kc0As/600x800"); */
-  background-position: center;
-  background-size: cover;
+    background: url("./FACHADA-scaled.jpg");
+    /* background: url("https://source.unsplash.com/K4mSJ7kc0As/600x800"); */
+    background-position: center;
+    background-size: cover;
 }
 
 .bg-register-image {
-  background: url("https://images.unsplash.com/photo-1541574823565-f1d660886187?w=600");
-  background-position: center;
-  background-size: cover;
+    background: url("https://www.fime.uanl.mx/wp-content/uploads/2021/11/FACHADA-scaled.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 .bg-password-image {
-  background: url("https://images.unsplash.com/photo-1541574823565-f1d660886187?w=600");
-  background-position: center;
-  background-size: cover;
+    background: url("https://www.fime.uanl.mx/wp-content/uploads/2021/11/FACHADA-scaled.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 form.user .custom-checkbox.small label {

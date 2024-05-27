@@ -14,9 +14,26 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="~/css/sb-admin-2.css" rel="stylesheet">
     <link href="~/vendor/toastr/toastr.min.css" rel="stylesheet">
     <link href="~/vendor/sweetalert/sweetalert.css" rel="stylesheet">
+    <link href="~/css/sb-admin-2.css" rel="stylesheet">
+
+    <style>
+        .sidebar-brand-icon > img{
+           width:4vw;
+            margin-right: -1vw;
+        }
+
+        #nombreNegocio{
+            font-size: .9vw;
+        }
+
+
+    </style>
+
+    <script src="~/vendor/jquery/jquery.min.js"></script>
+    <script src="~/js/vistas/menu_index.js"></script>
+    
      @await RenderSectionAsync("Estilos", required: false)
 </head>
 <body id="page-top">
@@ -28,13 +45,14 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+            <div id="negocioData">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/Home/Index">
                 <div class="sidebar-brand-icon">
-                    <i class="fas fa-desktop"></i>
+                    <!-- Aqui se inserta la imagen-->
                 </div>
-                <div class="sidebar-brand-text mx-3">MI TIENDA</div>
+                <div class="sidebar-brand-text mx-3" id="nombreNegocio"><!-- Aqui se inserta el texto--></div>
             </a>
-
+            </div>
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
